@@ -9,7 +9,7 @@ FROM debian:latest
 
 MAINTAINER hihouhou < hihouhou@hihouhou.com >
 
-ENV NTFY_VERSION 2.0.1
+ENV NTFY_VERSION 2.1.0
 
 # Update & install packages for ntfy
 RUN apt-get update && \
