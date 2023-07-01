@@ -15,9 +15,9 @@ ENV NTFY_VERSION 2.6.2
 RUN apt-get update && \
     apt-get install -y unzip wget
 
-RUN wget https://github.com/binwiederhier/ntfy/releases/download/v${NTFY_VERSION}/ntfy_${NTFY_VERSION}_linux_x86_64.tar.gz && \
-    tar xf ntfy_${NTFY_VERSION}_linux_x86_64.tar.gz && \
-    cp -a ntfy_${NTFY_VERSION}_linux_x86_64/ntfy /usr/bin/ntfy && \
+RUN wget https://github.com/binwiederhier/ntfy/releases/download/v${NTFY_VERSION}/ntfy_${NTFY_VERSION}_linux_amd64.tar.gz && \
+    tar xf ntfy_${NTFY_VERSION}_linux_amd64.tar.gz && \
+    cp -a ntfy_${NTFY_VERSION}_linux_amd64/ntfy /usr/bin/ntfy && \
     mkdir /etc/ntfy && \
     mkdir /var/cache/ntfy
 
