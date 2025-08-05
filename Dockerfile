@@ -9,7 +9,7 @@ FROM debian:latest
 
 LABEL org.opencontainers.image.authors="hihouhou < hihouhou@hihouhou.com >"
 
-ENV NTFY_VERSION=v2.13.0
+ENV NTFY_VERSION=v2.14.0
 
 # Update & install packages for ntfy
 RUN apt-get update && \
